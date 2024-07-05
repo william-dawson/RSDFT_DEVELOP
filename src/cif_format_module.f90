@@ -9,19 +9,19 @@ module cif_format_module
   public :: read_atom_cif
 
   character(30),parameter :: keyword(13)=(/ &
-       "_cell_length_a"             , &     !1
-       "_cell_length_b"             , &     !2
-       "_cell_length_c"             , &     !3
-       "_cell_angle_alpha"          , &     !4
-       "_cell_angle_beta"           , &     !5
-       "_cell_angle_gamma"          , &     !6
+       "_cell_length_a             ", &     !1
+       "_cell_length_b             ", &     !2
+       "_cell_length_c             ", &     !3
+       "_cell_angle_alpha          ", &     !4
+       "_cell_angle_beta           ", &     !5
+       "_cell_angle_gamma          ", &     !6
        "_symmetry_equiv_pos_site_id", &     !7
-       "_symmetry_equiv_pos_as_xyz" , &     !8
-       "_atom_site_label"           , &     !9
-       "_atom_site_type_symbol"     , &     !10
-       "_atom_site_fract_x"         , &     !11
-       "_atom_site_fract_y"         , &     !12
-       "_atom_site_fract_z"              /) !13
+       "_symmetry_equiv_pos_as_xyz ", &     !8
+       "_atom_site_label           ", &     !9
+       "_atom_site_type_symbol     ", &     !10
+       "_atom_site_fract_x         ", &     !11
+       "_atom_site_fract_y         ", &     !12
+       "_atom_site_fract_z         "/) !13
 
 contains
 

@@ -57,7 +57,7 @@ contains
       flag5 = any( c1 == (/'d','D','c','C'/) )
     end if
 
-    flag = flag1*all(flag2)*flag3*flag4*flag5
+    flag = flag1 .and. all(flag2) .and. flag3 .and. flag4 .and. flag5
     if ( flag ) ierr=0 !means this is VASP format
 write(*,*) ierr,flag1,flag2,flag3,flag4,flag5
     99 continue
