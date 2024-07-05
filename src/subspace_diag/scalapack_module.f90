@@ -58,6 +58,7 @@ contains
 
     call check_disp_switch( disp_on, 0 )
 
+    itmp = 0
     call IOTools_readIntegerKeyword( "SCLSD", itmp )
     if ( itmp(1) > -1 ) NPROW=itmp(1)
     if ( itmp(2) > -1 ) NPCOL=itmp(2)
